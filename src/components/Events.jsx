@@ -82,7 +82,7 @@ const Events = () => {
         </div>
         <Timeline className="timeline" position="alternate">
           {EventData.map((d) => (
-            <EventDetails id={d.id} data={d} />
+            <EventDetails key={d.id} data={d} />
           ))}
         </Timeline>
       </div>
