@@ -91,7 +91,7 @@ function AboutUs() {
         <h2>Our Objective and Membership Details</h2>
         <div className="objectives container">
           <div className="custom-list">
-            <h4>Our Objective: </h4>
+            <h4 className="my-3">Our Objective: </h4>
             <ul className="custom-list">
               <li>
                 To provide a platform where students can case their technical,
@@ -106,7 +106,7 @@ function AboutUs() {
             </ul>
           </div>
           <div className="custom-list-2">
-            <h4>For Membership: </h4>
+            <h4 className="my-3">For Membership: </h4>
             <ul className="custom-list-2">
               <li>Membership of CESTA is open to all students of DTC.</li>
               <li>

@@ -420,3 +420,52 @@ body {
   list-style-type: custom-ordered-2;
   color: white;
 }
+
+@media (max-width: 769px) {
+  .about_us {
+    overflow: hidden;
+  }
+
+  .team .card {
+    margin-left: 75px;
+  }
+
+  .team h2,
+  .our_objective h2 {
+    font-size: 40px;
+  }
+
+  .banner .heading h1 {
+    font-size: 62px;
+  }
+
+  .leadership_details {
+    flex-direction: column;
+  }
+
+  .details_about_us {
+    width: 100%;
+  }
+
+  .details_about_us p {
+    left: 0px;
+  }
+
+  .president_detail {
+    top: -116px;
+    left: -90px;
+  }
+
+  .button-custom {
+    left: 113px;
+    margin-top: 20px;
+  }
+
+  .objectives {
+    flex-direction: column;
+  }
+
+  .objectives h4 {
+    font-size: 30px !important;
+  }
+}
