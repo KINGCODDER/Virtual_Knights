@@ -328,3 +328,95 @@ body {
   font-size: 18px;
   padding: 21px;
 }
+
+.team h2,
+.our_objective h2 {
+  font-weight: 700;
+  font-size: 59px;
+  color: white;
+  line-height: 71px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.my-6 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team .card {
+  height: 200px;
+  margin-left: 100px;
+  width: 212px;
+  align-items: center;
+  background: #929aab;
+  rotate: 52deg;
+  transform: matrix(1, 0, -0.05, 1, 0, 0);
+  border-radius: 74% 26% 75% 25% / 70% 33% 67% 28%;
+  margin-top: 85px;
+  background-size: 100% 200%;
+  transition: background-position 1s;
+  background-image: linear-gradient(to bottom, #929aab 50%, #fff 50%);
+}
+
+.team .card-image img {
+  rotate: 307deg;
+  width: 100%;
+  position: relative;
+  top: -69px;
+  right: 87px;
+}
+
+.card-details {
+  rotate: 307deg;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  top: -210px;
+  left: 25px;
+  font-size: 20px;
+}
+
+.card:hover {
+  /* background-color: #eee; */
+  background-position: 0 -100%;
+}
+
+.team .card:hover .card-image {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s ease-in;
+}
+
+.card:hover .card-details p {
+  color: #000000;
+}
+
+@counter-style custom-ordered {
+  system: fixed;
+  symbols: "➡️" "😀" "👍" "➡️" "😀" "👍" "➡️" "😀" "👍";
+  suffix: " ";
+}
+@counter-style custom-ordered-2 {
+  system: fixed;
+  symbols: "🟨" "🔶" "🔷" "🟨" "🔶" "🔷" "🟨" "🔶" "🔷";
+  suffix: " ";
+}
+
+.custom-list {
+  list-style-type: custom-ordered;
+  color: white;
+  width: 100%;
+}
+
+.objectives {
+  margin-top: 40px;
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.custom-list-2 {
+  list-style-type: custom-ordered-2;
+  color: white;
+}
