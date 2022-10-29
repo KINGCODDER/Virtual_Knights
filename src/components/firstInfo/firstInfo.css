@@ -1,0 +1,31 @@
+.firstInfo--wrapper {
+  margin-top: 4%;
+  display: flex;
+  color: #393e46;
+}
+
+.firstInfo {
+  flex: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 32px;
+}
+
+.cards {
+  margin: 8% 0 0 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 16px;
+  max-width: 22rem;
+}
+
+.headCard {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    margin: 8% 0 0 8%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 16px;
+    max-width: 18rem;
+  }
+}
