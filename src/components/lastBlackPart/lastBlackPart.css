@@ -1,0 +1,97 @@
+.blackPart-wrapper {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  background-color: #000d10;
+  color: white;
+}
+
+.blackPart-wrapper .blackPart {
+  width: 50%;
+}
+
+.blackPart-wrapper .blackPart .images .main-links {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0px 0px 0px 10px;
+}
+
+.blackPart-wrapper .blackPart1 {
+  display: flex;
+  flex-direction: column;
+}
+.blackPart-wrapper .blackPart1 > h1 {
+  margin: 48px;
+}
+.blackPart-wrapper .blackPart .combo {
+  margin: 72px 0px 20px 8%;
+}
+
+.blackPart-wrapper .blackPart .combo .images {
+  max-width: 20px;
+  display: flex;
+}
+
+.blackPart-wrapper .blackPart .combo .images > img {
+  width: 30%;
+  border-radius: 100%;
+  margin: 4px;
+}
+
+.blackPart-wrapper .blackPart .combo2 {
+  margin: 40px;
+}
+
+.blackPart-wrapper .blackPart .line1 {
+  display: flex;
+}
+.blackPart-wrapper .blackPart .line1 .area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  flex: 1;
+}
+.blackPart-wrapper .blackPart .line1 .blank {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  flex: 1;
+}
+.blackPart-wrapper .blackPart .line1 .area > a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.3s;
+}
+
+.blackPart-wrapper .blackPart .line1 .area > a:hover {
+  color: white;
+}
+.blackPart-wrapper .blackPart .lowerLinks {
+  margin-top: 20%;
+  display: flex;
+  text-decoration: none;
+  color: gray;
+  transition: 0.3s;
+}
+
+.blackPart-wrapper .blackPart .lowerLinks :hover {
+  color: white;
+}
+
+.blackPart-wrapper .blackPart .lowerLinks > a {
+  text-decoration: none;
+  color: gray;
+  flex: 1;
+}
+
+.blackPart-wrapper .blackPart .image-black {
+  padding: 8%;
+  max-width: 60%;
+}
+
+.blackPart-wrapper .blackPart .image-black2 {
+  padding: 0 0 0 8%;
+  max-width: 25%;
+}

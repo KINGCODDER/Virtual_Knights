@@ -1,10 +1,17 @@
-import './App.css';
-import Events from './components/Events';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Events from "./components/Events";
+import HomePage from "./homePage";
 
 function App() {
   return (
     <>
-    <Events />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/events" element={<Events />} />
+        </Routes>
+      </Router>
     </>
   );
 }
