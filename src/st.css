@@ -1,0 +1,251 @@
+.banner {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.banner .heading {
+  display: inline-block;
+}
+
+.banner .heading h1 {
+  color: black;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: left;
+  margin: 0 25px;
+  line-height: 97px;
+}
+
+.leadership_details {
+  display: flex;
+}
+
+.details_about_us {
+  width: 80%;
+  text-align: center;
+}
+
+.details_about_us p {
+  top: 50px;
+  position: relative;
+  background-color: #eeeeee;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+  left: 58px;
+  padding: 20px;
+}
+
+.president_image {
+  height: 300px;
+  height: 370px;
+}
+
+.president_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: #e7e7e7;
+  border: none;
+  padding: 16px 37px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+}
+
+.button-custom {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: #fff;
+  background: #eee;
+  left: 60px;
+  position: relative;
+}
+
+.button-custom:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-custom::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button-custom span {
+  mix-blend-mode: difference;
+}
+
+.president_detail {
+  position: relative;
+  top: -45px;
+  left: -50px;
+  background: white;
+  width: fit-content;
+  font-weight: bolder;
+  width: 100;
+  float: right;
+  text-align: center;
+  font-size: 18px;
+  padding: 21px;
+}
+
+.team h2,
+.our_objective h2 {
+  font-weight: 700;
+  font-size: 59px;
+  color: #000;
+  line-height: 71px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.my-6 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team .card {
+  height: 200px;
+  margin-left: 100px;
+  width: 212px;
+  align-items: center;
+  background: #000;
+  rotate: 52deg;
+  transform: matrix(1, 0, -0.05, 1, 0, 0);
+  border-radius: 74% 26% 75% 25% / 70% 33% 67% 28%;
+  margin-top: 85px;
+  background-size: 100% 200%;
+  transition: background-position 1s;
+}
+
+.team .card-image img {
+  rotate: 307deg;
+  width: 100%;
+  position: relative;
+  top: -69px;
+  right: 87px;
+}
+
+.card-details {
+  rotate: 307deg;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  top: -210px;
+  left: 25px;
+  font-size: 20px;
+}
+
+.card:hover {
+  background-position: 0 -100%;
+}
+
+.team .card:hover .card-image {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s ease-in;
+}
+
+@counter-style custom-ordered {
+  system: fixed;
+  symbols: "➡️" "😀" "👍" "➡️" "😀" "👍" "➡️" "😀" "👍";
+  suffix: " ";
+}
+@counter-style custom-ordered-2 {
+  system: fixed;
+  symbols: "🟨" "🔶" "🔷" "🟨" "🔶" "🔷" "🟨" "🔶" "🔷";
+  suffix: " ";
+}
+
+.custom-list {
+  list-style-type: custom-ordered;
+  color: black;
+  width: 100%;
+}
+
+.objectives {
+  margin-top: 40px;
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.custom-list-2 {
+  list-style-type: custom-ordered-2;
+  color: black;
+}
+
+@media (max-width: 769px) {
+  .about_us {
+    overflow: hidden;
+  }
+
+  .team .card {
+    margin-left: 75px;
+  }
+
+  .team h2,
+  .our_objective h2 {
+    font-size: 40px;
+  }
+
+  .banner .heading h1 {
+    font-size: 62px;
+  }
+
+  .leadership_details {
+    flex-direction: column;
+  }
+
+  .details_about_us {
+    width: 100%;
+  }
+
+  .details_about_us p {
+    left: 0px;
+  }
+
+  .president_detail {
+    top: -116px;
+    left: -90px;
+  }
+
+  .button-custom {
+    left: 113px;
+    margin-top: 20px;
+  }
+
+  .objectives {
+    flex-direction: column;
+  }
+
+  .objectives h4 {
+    font-size: 30px !important;
+  }
+}

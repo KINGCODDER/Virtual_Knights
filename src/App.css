@@ -1,6 +1,10 @@
 /* Event Page */
+body {
+  background-color: #f5f5dc;
+}
+
 .event-wrapper {
-  overflow-x:hidden !important;
+  overflow-x: hidden !important;
   background-color: beige;
 }
 .mainHeading {
@@ -42,7 +46,7 @@
 }
 .event-details .tittle {
   font-weight: bolder;
-  color:#000;
+  color: #000;
 }
 .event-details p {
   color: #444;
