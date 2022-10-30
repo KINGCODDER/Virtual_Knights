@@ -257,3 +257,22 @@
     font-size: 30px !important;
   }
 }
+@media (max-width: 500px) {
+  .custom-list{
+    font-size: 18px;
+  }
+  .custom-list-2{
+    font-size: 18px;
+  }
+  .heading h1{
+    font-size: 50px !important;
+  }
+  .details_about_us p{
+    font-size: 24px !important;
+  }
+  .button-custom{
+    margin: 1rem auto;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

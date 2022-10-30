@@ -30,3 +30,14 @@
     max-width: 18rem;
   }
 }
+@media screen and (max-width: 640px) {
+  .firstInfo--wrapper{
+    flex-direction: column;
+  }
+  .firstInfo{
+    width: 100vw;
+  }
+  .card-body{
+    width: 100%;
+  }
+}
