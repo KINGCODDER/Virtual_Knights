@@ -74,9 +74,15 @@ const EventDetails = (props) => {
 };
 
 const Events = () => {
+  
   return (
     <>
-      <div className="event-wrapper">
+      <motion.div className="event-wrapper"
+      initial={{opacity: 0}}
+      animate={{opacity:1, transition:{duration:.5, type: 'ease'}}}
+      exit={{x: -window.innerWidth, transition:{duration:.3, type: 'slide'}}}
+      >
+      
         <div className="mainHeading">
           <h2>Upcoming Events</h2>
         </div>
@@ -85,7 +91,7 @@ const Events = () => {
             <EventDetails key={d.id} data={d} />
           ))}
         </Timeline>
-      </div>
+      </motion.div>
     </>
   );
 };
