@@ -20,7 +20,7 @@ const Contact = () => {
     >
       <motion.div className="contact-1"
               initial={{height:0}}
-        animate={{ height:"80vh",transition:{duration:.5,delay:.5,type:'slide'}}}>
+        animate={{ height:"90vh",transition:{duration:.5,delay:.5,type:'slide'}}}>
         <motion.div 
 
         className="triangle_bottom_left"></motion.div>
