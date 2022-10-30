@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import {
   Address,
@@ -12,10 +13,18 @@ import {
 
 const Contact = () => {
   return (
-    <>
-      <div className="contact-1">
-        <div className="triangle_bottom_left"></div>
-      </div>
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity:1, transition:{duration:.5, type: 'ease'}}}
+    exit={{x: -window.innerWidth, transition:{duration:.3, type: 'slide'}}}
+    >
+      <motion.div className="contact-1"
+              initial={{height:0}}
+        animate={{ height:"80vh",transition:{duration:.5,delay:.5,type:'slide'}}}>
+        <motion.div 
+
+        className="triangle_bottom_left"></motion.div>
+      </motion.div>
       <div className="contact-main">
         <div className="contact-main-top">
           <div className="contact-message">
@@ -105,7 +114,7 @@ const Contact = () => {
           </div>
         
       </div>
-    </>
+    </motion.div>
   );
 };
 

@@ -29,6 +29,8 @@
 }
 
 .details_about_us p {
+  border-radius: 20px;
+  border: 1px solid #e7e7e7;
   top: 50px;
   position: relative;
   background-color: #eeeeee;
@@ -40,6 +42,7 @@
 }
 
 .president_image {
+  border: 1px solid #929aab;
   height: 300px;
   height: 370px;
 }
@@ -78,7 +81,10 @@
 .button-custom:hover::before {
   transform: translate3d(100%, 0, 0);
 }
+.button-custom:hover{
+  border: 1px solid #929aab;
 
+}
 .button::before,
 .button::after {
   position: absolute;
@@ -113,6 +119,8 @@
   text-align: center;
   font-size: 18px;
   padding: 21px;
+  border-radius: 20px;
+  border: 1px solid #e7e7e7;
 }
 
 .team h2,
@@ -169,17 +177,17 @@
 
 .team .card:hover .card-image {
   transform: scale(1.2, 1.2);
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 @counter-style custom-ordered {
   system: fixed;
-  symbols: "➡️" "😀" "👍" "➡️" "😀" "👍" "➡️" "😀" "👍";
+  symbols: "➡" "➡" "➡" "➡" "➡" "➡" "➡" "➡" "➡";
   suffix: " ";
 }
 @counter-style custom-ordered-2 {
   system: fixed;
-  symbols: "🟨" "🔶" "🔷" "🟨" "🔶" "🔷" "🟨" "🔶" "🔷";
+  symbols: "➡" "➡" "➡" "➡" "➡" "➡" "➡" "➡" "➡";
   suffix: " ";
 }
 

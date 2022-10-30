@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./navBar.css";
 
 export default function NavBar() {
@@ -56,9 +57,9 @@ export default function NavBar() {
     // </div>
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <img className="image" src="Cesta.png" />
-        </a>
+        <NavLink className="navbar-brand" to="/">
+          <img className="image" src="Cesta.png" alt="cesta-logo"/>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -73,14 +74,14 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul>
             <li>
-              <a href="/">home</a>
+              <NavLink to="/">home</NavLink>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
             </li>
             <li>
-              <a href="/aboutus">About Us</a>
+              <NavLink to="/aboutus">About Us</NavLink>
 
               <span></span>
               <span></span>
@@ -88,14 +89,14 @@ export default function NavBar() {
               <span></span>
             </li>
             <li>
-              <a href="/events">upcoming events</a>
+              <NavLink to="/events">upcoming events</NavLink>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
             </li>
             <li>
-              <a href="/contactus">Contact Us</a>
+              <NavLink to="/contactus">Contact Us</NavLink>
               <span></span>
               <span></span>
               <span></span>
