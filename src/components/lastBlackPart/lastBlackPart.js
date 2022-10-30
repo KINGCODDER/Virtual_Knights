@@ -42,7 +42,7 @@ technical-campus/"
       </div>
       <div className="blackPart">
         <div className="line1">
-          <div className="area">
+          <div className="area area1">
             <h2>Company</h2>
             <NavLink to="/">
             Home
@@ -60,7 +60,7 @@ technical-campus/"
               Contact Us
             </NavLink>
           </div>
-          <div className="area">
+          <div className="area area2">
             <h2>My Account</h2>
             <a href="/register">Register</a>
             <a href="/Login">

@@ -55,7 +55,7 @@ export default function NavBar() {
     //     </div>
     //   </nav>
     // </div>
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
           <img className="image" src="Cesta.png" alt="cesta-logo"/>
@@ -71,8 +71,8 @@ export default function NavBar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul>
+        <div className="collapse navbar-collapse shi-se-bna-leta" id="navbarSupportedContent">
+          <ul className="navbar-shi-se-bna-leta">
             <li>
               <NavLink to="/">home</NavLink>
               <span></span>
