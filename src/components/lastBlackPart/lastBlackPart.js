@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./lastBlackPart.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
 
 export default function LastBlackpart() {
   useEffect(() => {
@@ -10,19 +11,19 @@ export default function LastBlackpart() {
   return (
     <div className="blackPart-wrapper" data-aos="fade-up">
       <div className="blackPart blackPart1">
-        <img className="image-black" src="Cesta.png" />
-        <img className="image-black2" src="DTC Logo.png" />
+        <img alt="souvenir" className="image-black" src="Cesta.png" />
+        <img alt="souvenir" className="image-black2" src="DTC Logo.png" />
         <div className="combo">
           <span style={{ marginLeft: 12 }}>Follow us</span>
           <div className="images">
             <a href="https://instagram.com/cesta_dtc?igshid=YmMyMTA2M2Y=">
-              <img
+              <img alt="souvenir"
                 className="main-links"
                 src="https://d1jh8w4crta3hl.cloudfront.net/thumbnail/Instagram%20Black%20and%20White%20Logo%20PNG_8769.jpeg"
               />
             </a>
             <a href="https://www.facebook.com/cestadtc">
-              <img
+              <img alt="souvenir"
                 className="main-links"
                 src="https://www.seekpng.com/png/full/148-1483528_facebook-instagram-youtube-facebook-icon-white-png-transparent.png"
               />
@@ -31,7 +32,7 @@ export default function LastBlackpart() {
               href="https://www.linkedin.com/company/cesta-computer-science-club-of-delhi-
 technical-campus/"
             >
-              <img
+              <img alt="souvenir"
                 className="main-links"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVN2luUstVtNnFMWKLwVuG_QUV87_JxPwst8zsWKvjmmayxBo9--7zLUmVUeENhU8GNmg&usqp=CAU"
               />
@@ -43,37 +44,39 @@ technical-campus/"
         <div className="line1">
           <div className="area">
             <h2>Company</h2>
-            <a href="#">About us</a>
-            <a href="#">
+            <NavLink to="/">
+            Home
+            </NavLink>
+            <NavLink to="/aboutus">
               <br />
-              Solutions
-            </a>
-            <a href="#">
+              About us
+            </NavLink>
+            <NavLink to="/events">
               <br />
               Upcoming Events
-            </a>
-            <a href="#">
+            </NavLink>
+            <NavLink to="/contactus">
               <br />
-              Contacts
-            </a>
+              Contact Us
+            </NavLink>
           </div>
           <div className="area">
             <h2>My Account</h2>
-            <a href="#">Register</a>
-            <a href="#">
+            <a href="/register">Register</a>
+            <a href="/Login">
               <br />
               Login
             </a>
-            <a href="#">
+            <NavLink href="/">
               <br /> Dashboard
-            </a>
+            </NavLink>
           </div>
           <div className="blank"></div>
         </div>
         <div className="lowerLinks">
-          <a href="#"> Cookie Policy</a>
-          <a href="#"> Terms and Conditions</a>
-          <a href="#"> Privacy Policy</a>
+          <a href="/cookies"> Cookie Policy</a>
+          <a href="/t&c"> Terms and Conditions</a>
+          <a href="/privacy"> Privacy Policy</a>
         </div>
       </div>
     </div>
